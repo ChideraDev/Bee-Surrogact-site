@@ -4,7 +4,12 @@ body {
   body a {
     text-decoration: none; }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0; }
 
 h1 {
@@ -53,20 +58,20 @@ nav {
   background-size: cover;
   text-align: center;
   background-position: center;
-  background-image: url("/images/garrett-jackson-oOnJWBMlb5A-unsplash.jpg");
+  background-image: url("/dist/images/garrett-jackson-oOnJWBMlb5A-unsplash.jpg");
   min-height: 70vh;
   object-fit: cover; }
-  .display-image-inner div:first-child {
+  .display-image-inner div {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 1rem;
     width: 80%; }
-    .display-image-inner div:first-child h1 {
-      margin: 0;
-      font-weight: 700; }
+    .display-image-inner div h1 {
+      font-size: 6rem;
+      text-shadow: 2px 2px 4px #4682B4;
+      text-transform: uppercase; }
 
 .about-us {
   background-color: #4682B4;
@@ -201,7 +206,7 @@ nav {
   background-size: cover;
   text-align: center;
   background-position: center;
-  background-image: url("/images/Pregnant-Lady.jpg");
+  background-image: url("/dist/images/Pregnant-Lady.jpg");
   min-height: 70vh; }
   .about-main .display-about-inner::after {
     content: "";
@@ -255,7 +260,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .about-main .Our-Services h1, .about-main .Our-Services p {
+  .about-main .Our-Services h1,
+  .about-main .Our-Services p {
     text-align: center;
     max-width: 100ch;
     line-height: 2rem; }
@@ -291,7 +297,7 @@ nav {
     background-size: cover;
     text-align: center;
     background-position: center;
-    background-image: url("/images/Privacy.jpg");
+    background-image: url("/dist/images/Privacy.jpg");
     min-height: 70vh; }
     .privacy-main .bee-privacy-inner::after {
       content: "";
@@ -373,7 +379,7 @@ footer {
     grid-template-areas: "about1 about2" "about3 about4"; }
   .story .our-story {
     grid-template-columns: 1fr;
-    grid-template-areas: "intending" "intendingPic" "surrogates"  "surrogatesPic"; }
+    grid-template-areas: "intending" "intendingPic" "surrogates" "surrogatesPic"; }
   .about-main .display-about-inner .about-header-details {
     grid-template-columns: 1fr; }
   .about-main .Our-Services .our-services-details {

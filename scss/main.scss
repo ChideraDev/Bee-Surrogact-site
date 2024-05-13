@@ -2,14 +2,19 @@
 body {
   font-family: "Karla", sans-serif;
   box-sizing: border-box;
-  a{
+  a {
     text-decoration: none;
   }
 }
-h1, h2, h3, h4, h5,p{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
 }
-h1{
+h1 {
   font-weight: 800;
 }
 .app {
@@ -35,15 +40,14 @@ nav {
     margin: 0;
     background-color: $Primary-color;
     li {
-     margin: 0 10px;
-     a {
-      color: $Secondary-color;
-    }
+      margin: 0 10px;
+      a {
+        color: $Secondary-color;
+      }
       &:hover {
         border-bottom: 2px solid $Secondary-color;
-        @include easeOut
+        @include easeOut;
       }
-      
     }
   }
   .menu-icon {
@@ -58,66 +62,44 @@ nav {
       transition: transform 0.4s;
     }
   }
-  
-  
 }
 
-
-  .display-image-inner{
-    padding-top: 2rem;
-    background-size: cover;
-    text-align: center;
-    background-position: center;
-    background-image: url("/images/garrett-jackson-oOnJWBMlb5A-unsplash.jpg");
-   min-height: 70vh;
-    object-fit: cover;
-  div:first-child{
+.display-image-inner {
+  padding-top: 2rem;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  background-image: url("/dist/images/garrett-jackson-oOnJWBMlb5A-unsplash.jpg");
+  min-height: 70vh;
+  object-fit: cover;
+  div {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 1rem;
     width: 80%;
-  h1 {
-    margin: 0;
-    font-weight: 700;
-  }
-  // .intro-text-divs{
-  //   background: linear-gradient(to right, $Primary-color, #fff);
-  //   padding: 2rem;
-  //   color: inherit;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   width: 30%;
-  //   border-radius: 10px;
-  //   h1{
-  //     padding-bottom: 1rem;
-  //   }
-  //   p{
-  //     max-width: 30ch;
-  //   }
-  // }
+    h1 {
+      font-size: 6rem;
+      text-shadow: 2px 2px 4px $Primary-color;
+      text-transform: uppercase;
+    }
   }
 }
 
-  
+.about-us {
+  background-color: $Primary-color;
+  padding: 2rem 0;
+  text-align: center;
+  .main-inner {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
-
-  .about-us{
-    background-color: $Primary-color;
-    padding:2rem 0 ;
-    text-align: center;
-    .main-inner{
-      width: 95%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-   
-    .bee-qualities{
+    .bee-qualities {
       display: grid;
       line-height: 1.5rem;
       padding-top: 2rem;
@@ -125,23 +107,23 @@ nav {
       margin: 0 auto;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       grid-template-areas: "about1 about2 about3 about4";
-      h1{
+      h1 {
         grid-area: h1;
       }
-      div:first-child{
+      div:first-child {
         grid-area: about1;
       }
-      div:nth-child(2){
+      div:nth-child(2) {
         grid-area: about2;
       }
-      div:nth-child(3){
+      div:nth-child(3) {
         grid-area: about3;
       }
-      div:nth-child(4){
+      div:nth-child(4) {
         grid-area: about4;
       }
 
-      div{
+      div {
         background: $Secondary-color;
         display: flex;
         padding: 1rem;
@@ -149,270 +131,262 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        img{
+        img {
           max-width: 50px;
         }
-        h3{
+        h3 {
           padding-top: 1rem;
         }
-        p{
+        p {
           max-width: 30ch;
           padding: 1rem 0;
         }
-        a{
-          color:  $Primary-color;
+        a {
+          color: $Primary-color;
         }
       }
     }
   }
 }
-.story{
-  .our-story{
+.story {
+  .our-story {
     display: grid;
     padding: 1.5rem 0;
     background-color: $Secondary-color;
-    grid-template-columns: repeat(2,minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-areas: "intendingPic intending" " surrogates  surrogatesPic";
     gap: 1rem;
-    div:first-child{
+    div:first-child {
       justify-self: center;
       align-self: center;
       background-color: $Primary-color;
-      padding:1.5rem ;
+      padding: 1.5rem;
       box-shadow: 5px 10px #000;
       grid-area: intending;
-      @include btn
+      @include btn;
     }
-    div:nth-child(2){
+    div:nth-child(2) {
       display: flex;
       grid-area: intendingPic;
     }
-    div:nth-child(3){
+    div:nth-child(3) {
       justify-self: center;
       align-self: center;
-      padding:1.5rem ;
+      padding: 1.5rem;
       grid-area: surrogates;
       box-shadow: 5px 10px #000;
       background-color: $Primary-color;
-      @include btn
+      @include btn;
     }
-    div:nth-child(4){
+    div:nth-child(4) {
       display: flex;
       grid-area: surrogatesPic;
     }
-    div{
+    div {
       line-height: 2rem;
-      img{
+      img {
         max-width: 100%;
         height: auto; /* Ensure the image doesn't overflow its container */
-  object-fit: cover;
+        object-fit: cover;
       }
-      p{
-font-size: 1rem;
+      p {
+        font-size: 1rem;
       }
     }
-   
-}
+  }
 }
 
 // About
 
-.about-main{
-  .about-bee-heading{
-   @include heading()
+.about-main {
+  .about-bee-heading {
+    @include heading();
   }
-  
-  @include details("display-about-inner", url("/images/Pregnant-Lady.jpg"));
-  .Our-Services{
+
+  @include details("display-about-inner", url("/dist/images/Pregnant-Lady.jpg"));
+  .Our-Services {
     background-color: $Primary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1,p{
+    h1,
+    p {
       text-align: center;
       max-width: 100ch;
       line-height: 2rem;
     }
-    .our-services-details{
+    .our-services-details {
       display: grid;
       gap: 1rem;
       grid-template-columns: 1fr 1fr;
-      ul{
-        background-color:lighten($Secondary-color, 10);
+      ul {
+        background-color: lighten($Secondary-color, 10);
         padding: 2rem;
-        li{
+        li {
           padding: 1rem 0;
           line-height: 1.7rem;
         }
       }
     }
   }
-  .for_Intending-parents{
+  .for_Intending-parents {
     background-color: lighten($Secondary-color, 10);
-   padding: 0 1rem 1rem;
-   p{
-    line-height: 2rem;
-   }
+    padding: 0 1rem 1rem;
+    p {
+      line-height: 2rem;
+    }
   }
 }
 
 // Privacy
 
-
-.privacy-main{
+.privacy-main {
   line-height: 1.5rem;
-  .bee-privacy-heading{
-   @include heading()
+  .bee-privacy-heading {
+    @include heading();
   }
-  
-  
-  @include details("bee-privacy-inner", url("/images/Privacy.jpg"));
 
+  @include details("bee-privacy-inner", url("/dist/images/Privacy.jpg"));
 }
 
 // Footer
 
-footer{
+footer {
   color: $Secondary-color;
   text-align: center;
   background-color: $Primary-color;
-  div{
+  div {
     padding: 1rem 0;
-    a{
+    a {
       color: inherit;
       padding: 0.5rem;
-      i{
+      i {
         font-size: 1.5rem;
       }
-      :hover{
+      :hover {
         color: $black-color;
       }
     }
   }
 }
 //Whatsapp Logo
-.whatsapp{
+.whatsapp {
   width: 50px;
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
   right: 3%;
   z-index: 10;
-  a{
-    img{
+  a {
+    img {
       width: 100%;
     }
-  
   }
 }
-
 
 @media (max-width: 768px) {
-    .header-links{
-        width: 97%;
-    }
-  main{
-   
-    .display-image-inner{
-      .header-inner{
+  .header-links {
+    width: 97%;
+  }
+  main {
+    .display-image-inner {
+      .header-inner {
         width: 97%;
       }
     }
   }
-  .about-us{
-    .main-inner{
-      .bee-qualities{
+  .about-us {
+    .main-inner {
+      .bee-qualities {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-areas: "about1 about2" "about3 about4";
-    
-    }
-    }
-  }
-  .story{
-  .our-story{
-  grid-template-columns: 1fr;
-  grid-template-areas: "intending" "intendingPic" "surrogates"  "surrogatesPic";
-  }
-}
-  .about-main{ .display-about-inner{ .about-header-details{
-    grid-template-columns: 1fr;
-  } }
-  .Our-Services{ .our-services-details {
-    grid-template-columns: 1fr;
-  }}
-  }
-  .privacy-main{ .bee-privacy-inner{
-     .bee-privacy-details {
-      grid-template-columns: 1fr;
-     }
-    }
-  }
-}
-@media(max-width: 600px){
-  main{
-    
-    .display-image-inner{
-      .header-inner{
-       flex-direction: column;
-       .intro-text-divs{
-        width: 80%;
-       }
       }
     }
   }
- .about-us{
-  .main-inner{
-
-  
-  .bee-qualities{
-    width: 95%;
-    grid-template-columns: 1fr;
-    grid-template-areas: "about1" "about2" "about3" "about4";
+  .story {
+    .our-story {
+      grid-template-columns: 1fr;
+      grid-template-areas: "intending" "intendingPic" "surrogates" "surrogatesPic";
+    }
+  }
+  .about-main {
+    .display-about-inner {
+      .about-header-details {
+        grid-template-columns: 1fr;
+      }
+    }
+    .Our-Services {
+      .our-services-details {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .privacy-main {
+    .bee-privacy-inner {
+      .bee-privacy-details {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 }
- }
+@media (max-width: 600px) {
+  main {
+    .display-image-inner {
+      .header-inner {
+        flex-direction: column;
+        .intro-text-divs {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .about-us {
+    .main-inner {
+      .bee-qualities {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "about1" "about2" "about3" "about4";
+      }
+    }
+  }
 }
 
-@media(max-width: 550px){
-  nav{
-    .nav-ul-big{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-   &.active {
+@media (max-width: 550px) {
+  nav {
+    .nav-ul-big {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      &.active {
+        display: flex;
+        position: absolute;
+        height: 30vh;
+        width: 50%;
+        padding: 2rem 0;
+        right: 2px;
+        top: 80px;
+        @include comeFromRight;
+        transform: perspective(370px) scaleZ(5) rotate(17deg);
+        @include easeOut;
+        animation: comeFromRight 1s forwards;
+      }
+    }
+    .menu-icon {
       display: flex;
-      position: absolute;
-      height: 30vh;
-      width: 50%;
-      padding: 2rem 0;
-      right: 2px;
-      top: 80px;
-      @include comeFromRight;
-      transform: perspective(370px) scaleZ(5) rotate(17deg);
-      @include easeOut;
-      animation: comeFromRight 1s forwards;
-    }
-  
-}
-.menu-icon {
-  display: flex;
 
-  &.active {
-    .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
+      &.active {
+        .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
 
-    .bar:nth-child(2) {
-      opacity: 0;
-    }
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
 
-    .bar:nth-child(3) {
-      transform: translateY(-10px) rotate(-45deg);
+        .bar:nth-child(3) {
+          transform: translateY(-10px) rotate(-45deg);
+        }
+      }
     }
   }
 }
-}
-
-}
-
-

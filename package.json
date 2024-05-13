@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bee Surrogacy",
   "main": "index.js",
-  "homepage": "https://ChiderDev.gihub.io/Bee-Surrogact-site",
+  "homepage": "https://chideradev.github.io/Bee-Surrogact-site/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
