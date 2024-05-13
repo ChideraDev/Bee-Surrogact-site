@@ -4,7 +4,12 @@ body {
   body a {
     text-decoration: none; }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0; }
 
 h1 {
@@ -255,7 +260,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .about-main .Our-Services h1, .about-main .Our-Services p {
+  .about-main .Our-Services h1,
+  .about-main .Our-Services p {
     text-align: center;
     max-width: 100ch;
     line-height: 2rem; }
@@ -373,7 +379,7 @@ footer {
     grid-template-areas: "about1 about2" "about3 about4"; }
   .story .our-story {
     grid-template-columns: 1fr;
-    grid-template-areas: "intending" "intendingPic" "surrogates"  "surrogatesPic"; }
+    grid-template-areas: "intending" "intendingPic" "surrogates" "surrogatesPic"; }
   .about-main .display-about-inner .about-header-details {
     grid-template-columns: 1fr; }
   .about-main .Our-Services .our-services-details {
