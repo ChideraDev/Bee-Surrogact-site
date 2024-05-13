@@ -56,17 +56,17 @@ nav {
   background-image: url("/images/garrett-jackson-oOnJWBMlb5A-unsplash.jpg");
   min-height: 70vh;
   object-fit: cover; }
-  .display-image-inner div:first-child {
+  .display-image-inner div {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 1rem;
     width: 80%; }
-    .display-image-inner div:first-child h1 {
-      margin: 0;
-      font-weight: 700; }
+    .display-image-inner div h1 {
+      font-size: 6rem;
+      text-shadow: 2px 2px 4px #4682B4;
+      text-transform: uppercase; }
 
 .about-us {
   background-color: #4682B4;
